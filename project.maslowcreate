@@ -333,8 +333,21 @@
                 {
                     "name": "3D shape 1",
                     "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
                 }
             ]
+        },
+        {
+            "atomType": "GitHubMolecule",
+            "name": "Encoder Magnet",
+            "x": 0.5754026354319179,
+            "y": 0.7701149425287357,
+            "uniqueID": 757428,
+            "projectID": "268599913",
+            "ioValues": []
         },
         {
             "atomType": "Output",
@@ -392,6 +405,13 @@
             "ap2Name": "number or geometry",
             "ap2Primary": false,
             "ap1ID": 582681
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 757428,
+            "ap2ID": 582681
         }
     ],
     "fileTypeVersion": 1,

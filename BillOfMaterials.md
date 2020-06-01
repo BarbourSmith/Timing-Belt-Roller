@@ -2,6 +2,7 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|Total: |0|$0.00| |
+|Encoder Magnet|1|$0.19|https://www.digikey.com/product-detail/en/radial-magnet-inc/9049/469-1075-ND/6030786|
+|Total: |1|$0.19| |
 
- 3xCOG MSRP: $0.00
+ 3xCOG MSRP: $0.57
