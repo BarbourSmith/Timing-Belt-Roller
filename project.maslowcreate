@@ -4,9 +4,125 @@
     "x": 0,
     "y": 0,
     "uniqueID": 387983,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Center Height",
+            "ioValue": 10
+        }
+    ],
     "topLevel": true,
     "allAtoms": [
+        {
+            "atomType": "Molecule",
+            "name": "Sprocket",
+            "x": 0.2452415812591508,
+            "y": 0.2950191570881226,
+            "uniqueID": 748508,
+            "ioValues": [
+                {
+                    "name": "Center Height",
+                    "ioValue": 10
+                }
+            ],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Input",
+                    "name": "Center Height",
+                    "x": 0.022693997071742314,
+                    "y": 0.5057471264367817,
+                    "uniqueID": 803550,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.4019033674963397,
+                    "y": 0.43295019157088127,
+                    "uniqueID": 908372,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": ""
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
+                    "atomType": "GitHubMolecule",
+                    "name": "2GT Sprocket",
+                    "x": 0.28184480234260617,
+                    "y": 0.5977011494252873,
+                    "uniqueID": 192793,
+                    "projectID": "235682860",
+                    "ioValues": [
+                        {
+                            "name": "Number of teeth",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Resolution",
+                            "ioValue": 0.1
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.9853587115666179,
+                    "y": 0.5,
+                    "ioValues": []
+                }
+            ],
+            "allConnectors": [
+                null
+            ],
+            "fileTypeVersion": 1
+        },
+        {
+            "atomType": "Input",
+            "name": "Center Height",
+            "x": 0.06661786237188873,
+            "y": 0.5478927203065134,
+            "uniqueID": 486993,
+            "ioValues": []
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Shoulders",
+            "x": 0.24743777452415813,
+            "y": 0.7011494252873564,
+            "uniqueID": 102858,
+            "ioValues": [
+                {
+                    "name": "Center Height",
+                    "ioValue": 10
+                }
+            ],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Input",
+                    "name": "Center Height",
+                    "x": 0,
+                    "y": 0.5478927203065134,
+                    "uniqueID": 739495,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.9853587115666179,
+                    "y": 0.5,
+                    "ioValues": []
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1
+        },
         {
             "atomType": "Output",
             "name": "Output",
@@ -15,6 +131,23 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Center Height",
+            "ap2Primary": false,
+            "ap1ID": 486993,
+            "ap2ID": 102858
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Center Height",
+            "ap2Primary": false,
+            "ap1ID": 486993,
+            "ap2ID": 748508
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": 0.25
 }
