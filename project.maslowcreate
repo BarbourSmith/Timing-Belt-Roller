@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Center Height",
-            "ioValue": 20
+            "ioValue": 5
         }
     ],
     "topLevel": true,
@@ -21,7 +21,7 @@
             "ioValues": [
                 {
                     "name": "Center Height",
-                    "ioValue": 20
+                    "ioValue": 5
                 }
             ],
             "topLevel": false,
@@ -43,7 +43,7 @@
                     "ioValues": [
                         {
                             "name": "height",
-                            "ioValue": 20
+                            "ioValue": 5
                         }
                     ]
                 },
@@ -57,11 +57,32 @@
                     "ioValues": [
                         {
                             "name": "Number of teeth",
-                            "ioValue": 10
+                            "ioValue": 16
                         },
                         {
                             "name": "Resolution",
                             "ioValue": 0.1
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Translate",
+                    "name": "Translate",
+                    "x": 0.6456808199121523,
+                    "y": 0.6628352490421456,
+                    "uniqueID": 480302,
+                    "ioValues": [
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 3.8
                         }
                     ]
                 },
@@ -83,9 +104,10 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
-                    "ap1ID": 908372
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 908372,
+                    "ap2ID": 480302
                 },
                 {
                     "ap1Name": "Geometry",
@@ -93,6 +115,12 @@
                     "ap2Primary": true,
                     "ap1ID": 192793,
                     "ap2ID": 908372
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 480302
                 }
             ],
             "fileTypeVersion": 1
@@ -106,6 +134,23 @@
             "ioValues": []
         },
         {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.4633967789165447,
+            "y": 0.4482758620689655,
+            "uniqueID": 931658,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
             "atomType": "Molecule",
             "name": "Shoulders",
             "x": 0.24743777452415813,
@@ -114,7 +159,7 @@
             "ioValues": [
                 {
                     "name": "Center Height",
-                    "ioValue": 20
+                    "ioValue": 5
                 }
             ],
             "topLevel": false,
@@ -208,6 +253,13 @@
     ],
     "allConnectors": [
         {
+            "ap1Name": "Geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 748508,
+            "ap2ID": 931658
+        },
+        {
             "ap1Name": "number or geometry",
             "ap2Name": "Center Height",
             "ap2Primary": false,
@@ -220,6 +272,19 @@
             "ap2Primary": false,
             "ap1ID": 486993,
             "ap2ID": 748508
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 931658
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 102858,
+            "ap2ID": 931658
         }
     ],
     "fileTypeVersion": 1,
