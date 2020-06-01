@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Center Height",
-            "ioValue": 10
+            "ioValue": 20
         }
     ],
     "topLevel": true,
@@ -21,7 +21,7 @@
             "ioValues": [
                 {
                     "name": "Center Height",
-                    "ioValue": 10
+                    "ioValue": 20
                 }
             ],
             "topLevel": false,
@@ -37,17 +37,13 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.4019033674963397,
-                    "y": 0.43295019157088127,
+                    "x": 0.4546120058565154,
+                    "y": 0.3563218390804597,
                     "uniqueID": 908372,
                     "ioValues": [
                         {
-                            "name": "geometry",
-                            "ioValue": ""
-                        },
-                        {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 20
                         }
                     ]
                 },
@@ -78,7 +74,26 @@
                 }
             ],
             "allConnectors": [
-                null
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 803550,
+                    "ap2ID": 908372
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 908372
+                },
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 192793,
+                    "ap2ID": 908372
+                }
             ],
             "fileTypeVersion": 1
         },
@@ -99,7 +114,7 @@
             "ioValues": [
                 {
                     "name": "Center Height",
-                    "ioValue": 10
+                    "ioValue": 20
                 }
             ],
             "topLevel": false,
@@ -113,6 +128,45 @@
                     "ioValues": []
                 },
                 {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.4538799414348463,
+                    "y": 0.3831417624521073,
+                    "uniqueID": 841293,
+                    "ioValues": [
+                        {
+                            "name": "height",
+                            "ioValue": 3.8
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.2247437774524158,
+                    "y": 0.7126436781609194,
+                    "uniqueID": 772681,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 7.85
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 0.6573938506588579,
+                    "y": 0.5134099616858238,
+                    "uniqueID": 723851,
+                    "ioValues": [
+                        {
+                            "name": "3D shape 1",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
                     "x": 0.9853587115666179,
@@ -120,7 +174,28 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 841293,
+                    "ap2ID": 723851
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 772681,
+                    "ap2ID": 841293
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 723851
+                }
+            ],
             "fileTypeVersion": 1
         },
         {
