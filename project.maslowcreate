@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Center Height",
-            "ioValue": 5
+            "ioValue": 20
         }
     ],
     "topLevel": true,
@@ -21,7 +21,7 @@
             "ioValues": [
                 {
                     "name": "Center Height",
-                    "ioValue": 5
+                    "ioValue": 20
                 }
             ],
             "topLevel": false,
@@ -43,7 +43,7 @@
                     "ioValues": [
                         {
                             "name": "height",
-                            "ioValue": 5
+                            "ioValue": 20
                         }
                     ]
                 },
@@ -126,18 +126,10 @@
             "fileTypeVersion": 1
         },
         {
-            "atomType": "Input",
-            "name": "Center Height",
-            "x": 0.06661786237188873,
-            "y": 0.5478927203065134,
-            "uniqueID": 486993,
-            "ioValues": []
-        },
-        {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.4633967789165447,
-            "y": 0.4482758620689655,
+            "x": 0.44729136163982436,
+            "y": 0.31417624521072796,
             "uniqueID": 931658,
             "ioValues": [
                 {
@@ -151,6 +143,27 @@
             ]
         },
         {
+            "atomType": "Input",
+            "name": "Center Height",
+            "x": 0.06661786237188873,
+            "y": 0.5478927203065134,
+            "uniqueID": 486993,
+            "ioValues": []
+        },
+        {
+            "atomType": "Tag",
+            "name": "Add Tag",
+            "x": 0.5863836017569546,
+            "y": 0.3333333333333333,
+            "uniqueID": 270092,
+            "ioValues": [
+                {
+                    "name": "tag",
+                    "ioValue": "Roller"
+                }
+            ]
+        },
+        {
             "atomType": "Molecule",
             "name": "Shoulders",
             "x": 0.24743777452415813,
@@ -159,24 +172,29 @@
             "ioValues": [
                 {
                     "name": "Center Height",
-                    "ioValue": 5
+                    "ioValue": 20
                 }
             ],
             "topLevel": false,
             "allAtoms": [
                 {
-                    "atomType": "Input",
-                    "name": "Center Height",
-                    "x": 0,
-                    "y": 0.5478927203065134,
-                    "uniqueID": 739495,
-                    "ioValues": []
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.1493411420204978,
+                    "y": 0.18007662835249041,
+                    "uniqueID": 772681,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 7.85
+                        }
+                    ]
                 },
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.4538799414348463,
-                    "y": 0.3831417624521073,
+                    "x": 0.31259150805270863,
+                    "y": 0.210727969348659,
                     "uniqueID": 841293,
                     "ioValues": [
                         {
@@ -186,15 +204,45 @@
                     ]
                 },
                 {
-                    "atomType": "Circle",
-                    "name": "Circle",
-                    "x": 0.2247437774524158,
-                    "y": 0.7126436781609194,
-                    "uniqueID": 772681,
+                    "atomType": "Input",
+                    "name": "Center Height",
+                    "x": 0,
+                    "y": 0.5478927203065134,
+                    "uniqueID": 739495,
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "Equation",
+                    "x": 0.21449487554904834,
+                    "y": 0.6053639846743295,
+                    "uniqueID": 376190,
                     "ioValues": [
                         {
-                            "name": "diameter",
-                            "ioValue": 7.85
+                            "name": "H",
+                            "ioValue": 20
+                        }
+                    ],
+                    "currentEquation": "H+3.8"
+                },
+                {
+                    "atomType": "Translate",
+                    "name": "Translate",
+                    "x": 0.43850658857979496,
+                    "y": 0.5823754789272031,
+                    "uniqueID": 518152,
+                    "ioValues": [
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 23.8
                         }
                     ]
                 },
@@ -207,6 +255,10 @@
                     "ioValues": [
                         {
                             "name": "3D shape 1",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "3D shape 2",
                             "ioValue": 10
                         }
                     ]
@@ -222,6 +274,13 @@
             "allConnectors": [
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 772681,
+                    "ap2ID": 841293
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "3D shape 1",
                     "ap2Primary": false,
                     "ap1ID": 841293,
@@ -231,8 +290,29 @@
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
-                    "ap1ID": 772681,
-                    "ap2ID": 841293
+                    "ap1ID": 841293,
+                    "ap2ID": 518152
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "H",
+                    "ap2Primary": false,
+                    "ap1ID": 739495,
+                    "ap2ID": 376190
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 376190,
+                    "ap2ID": 518152
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 518152,
+                    "ap2ID": 723851
                 },
                 {
                     "ap1Name": "geometry",
@@ -242,6 +322,19 @@
                 }
             ],
             "fileTypeVersion": 1
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.7584187408491948,
+            "y": 0.2950191570881226,
+            "uniqueID": 582681,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                }
+            ]
         },
         {
             "atomType": "Output",
@@ -260,6 +353,13 @@
             "ap2ID": 931658
         },
         {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 931658,
+            "ap2ID": 270092
+        },
+        {
             "ap1Name": "number or geometry",
             "ap2Name": "Center Height",
             "ap2Primary": false,
@@ -275,9 +375,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
+            "ap2Name": "3D shape 1",
             "ap2Primary": false,
-            "ap1ID": 931658
+            "ap1ID": 270092,
+            "ap2ID": 582681
         },
         {
             "ap1Name": "Geometry",
@@ -285,6 +386,12 @@
             "ap2Primary": false,
             "ap1ID": 102858,
             "ap2ID": 931658
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 582681
         }
     ],
     "fileTypeVersion": 1,
