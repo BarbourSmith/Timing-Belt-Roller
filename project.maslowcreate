@@ -335,16 +335,51 @@
                     "ioValue": 10
                 },
                 {
-                    "name": "3D shape 2",
+                    "name": "3D shape 3",
                     "ioValue": 10
                 }
             ]
         },
         {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.568814055636896,
+            "y": 0.5938697318007663,
+            "uniqueID": 993104,
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 28
+                }
+            ]
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.30014641288433386,
+            "y": 0.8812260536398466,
+            "uniqueID": 681461,
+            "ioValues": [
+                {
+                    "name": "H",
+                    "ioValue": 20
+                }
+            ],
+            "currentEquation": "H+8"
+        },
+        {
             "atomType": "GitHubMolecule",
             "name": "Encoder Magnet",
-            "x": 0.5754026354319179,
-            "y": 0.7701149425287357,
+            "x": 0.48682284040995605,
+            "y": 0.8697318007662835,
             "uniqueID": 757428,
             "projectID": "268599913",
             "ioValues": []
@@ -387,6 +422,13 @@
             "ap2ID": 748508
         },
         {
+            "ap1Name": "number or geometry",
+            "ap2Name": "H",
+            "ap2Primary": false,
+            "ap1ID": 486993,
+            "ap2ID": 681461
+        },
+        {
             "ap1Name": "geometry",
             "ap2Name": "3D shape 1",
             "ap2Primary": false,
@@ -407,11 +449,25 @@
             "ap1ID": 582681
         },
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "3D shape 2",
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 3",
             "ap2Primary": false,
-            "ap1ID": 757428,
+            "ap1ID": 993104,
             "ap2ID": 582681
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": 681461,
+            "ap2ID": 993104
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 757428,
+            "ap2ID": 993104
         }
     ],
     "fileTypeVersion": 1,
