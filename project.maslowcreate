@@ -151,23 +151,10 @@
             "ioValues": []
         },
         {
-            "atomType": "Tag",
-            "name": "Add Tag",
-            "x": 0.5863836017569546,
-            "y": 0.3333333333333333,
-            "uniqueID": 270092,
-            "ioValues": [
-                {
-                    "name": "tag",
-                    "ioValue": "Roller"
-                }
-            ]
-        },
-        {
             "atomType": "Molecule",
             "name": "Shoulders",
-            "x": 0.24743777452415813,
-            "y": 0.7011494252873564,
+            "x": 0.2540263543191801,
+            "y": 0.6168582375478927,
             "uniqueID": 102858,
             "ioValues": [
                 {
@@ -324,6 +311,19 @@
             "fileTypeVersion": 1
         },
         {
+            "atomType": "Tag",
+            "name": "Add Tag",
+            "x": 0.5863836017569546,
+            "y": 0.3333333333333333,
+            "uniqueID": 270092,
+            "ioValues": [
+                {
+                    "name": "tag",
+                    "ioValue": "Roller"
+                }
+            ]
+        },
+        {
             "atomType": "Assembly",
             "name": "Assembly",
             "x": 0.7584187408491948,
@@ -357,7 +357,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 28
+                    "ioValue": 25.1
                 }
             ]
         },
@@ -373,7 +373,7 @@
                     "ioValue": 20
                 }
             ],
-            "currentEquation": "H+8"
+            "currentEquation": "H+2*3.8-2.5"
         },
         {
             "atomType": "GitHubMolecule",
@@ -429,18 +429,18 @@
             "ap2ID": 681461
         },
         {
-            "ap1Name": "geometry",
-            "ap2Name": "3D shape 1",
-            "ap2Primary": false,
-            "ap1ID": 270092,
-            "ap2ID": 582681
-        },
-        {
             "ap1Name": "Geometry",
             "ap2Name": "3D shape 1",
             "ap2Primary": false,
             "ap1ID": 102858,
             "ap2ID": 931658
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 270092,
+            "ap2ID": 582681
         },
         {
             "ap1Name": "geometry",
