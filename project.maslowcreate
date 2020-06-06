@@ -57,7 +57,7 @@
                     "ioValues": [
                         {
                             "name": "Number of teeth",
-                            "ioValue": 19
+                            "ioValue": 17
                         },
                         {
                             "name": "Resolution",
