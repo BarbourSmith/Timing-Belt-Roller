@@ -29,7 +29,7 @@
                 {
                     "atomType": "Input",
                     "name": "Center Height",
-                    "x": 0.022693997071742314,
+                    "x": 0.013333333333333334,
                     "y": 0.5057471264367817,
                     "uniqueID": 803550,
                     "ioValues": []
@@ -145,7 +145,7 @@
         {
             "atomType": "Input",
             "name": "Center Height",
-            "x": 0.06661786237188873,
+            "x": 0.013333333333333334,
             "y": 0.5478927203065134,
             "uniqueID": 486993,
             "ioValues": []
@@ -193,7 +193,7 @@
                 {
                     "atomType": "Input",
                     "name": "Center Height",
-                    "x": 0,
+                    "x": 0.013333333333333334,
                     "y": 0.5478927203065134,
                     "uniqueID": 739495,
                     "ioValues": []
