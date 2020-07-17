@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Center Height",
-            "ioValue": 20
+            "ioValue": 13.635
         }
     ],
     "topLevel": true,
@@ -21,7 +21,7 @@
             "ioValues": [
                 {
                     "name": "Center Height",
-                    "ioValue": 20
+                    "ioValue": 13.635
                 }
             ],
             "topLevel": false,
@@ -43,7 +43,7 @@
                     "ioValues": [
                         {
                             "name": "height",
-                            "ioValue": 20
+                            "ioValue": 13.635
                         }
                     ]
                 },
@@ -159,7 +159,7 @@
             "ioValues": [
                 {
                     "name": "Center Height",
-                    "ioValue": 20
+                    "ioValue": 13.635
                 }
             ],
             "topLevel": false,
@@ -207,7 +207,7 @@
                     "ioValues": [
                         {
                             "name": "H",
-                            "ioValue": 20
+                            "ioValue": 13.635
                         }
                     ],
                     "currentEquation": "H+3.8"
@@ -229,7 +229,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 23.8
+                            "ioValue": 17.435
                         }
                     ]
                 },
@@ -350,6 +350,27 @@
             "ioValues": []
         },
         {
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.7547584187408491,
+            "y": 0.7586206896551725,
+            "uniqueID": 241659,
+            "ioValues": [
+                {
+                    "name": "tag",
+                    "ioValue": "Roller"
+                }
+            ]
+        },
+        {
+            "atomType": "Stl",
+            "name": "Stl",
+            "x": 0.870424597364568,
+            "y": 0.6781609195402298,
+            "uniqueID": 671028,
+            "ioValues": []
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -407,11 +428,25 @@
             "ap1ID": 582681
         },
         {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 582681,
+            "ap2ID": 241659
+        },
+        {
             "ap1Name": "Geometry",
             "ap2Name": "3D shape 4",
             "ap2Primary": false,
             "ap1ID": 757428,
             "ap2ID": 582681
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 241659,
+            "ap2ID": 671028
         }
     ],
     "fileTypeVersion": 1,
